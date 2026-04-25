@@ -1,4 +1,29 @@
-# Database & DBMS Notes
+# Database and DBMS Notes
+
+Simple, beginner-friendly notes on **Database**, **DBMS**, **SQL**, and **RDBMS** for study, revision, and GitHub reference.
+
+These notes are useful for:
+
+- College exams and interview preparation
+- Beginners learning SQL and DBMS
+- Office and operations work involving data
+- Quick revision before practice
+
+## Table of Contents
+
+- [1. What is a Database?](#1-what-is-a-database)
+- [2. What is DBMS?](#2-what-is-dbms)
+- [3. Types of DBMS](#3-types-of-dbms)
+- [4. What is SQL?](#4-what-is-sql)
+- [5. How to Create a Database](#5-how-to-create-a-database)
+- [6. How to Delete a Database](#6-how-to-delete-a-database)
+- [7. Important Concepts](#7-important-concepts)
+- [8. Keys in DBMS](#8-keys-in-dbms)
+- [9. Advantages of DBMS](#9-advantages-of-dbms)
+- [10. Disadvantages of DBMS](#10-disadvantages-of-dbms)
+- [11. Normalization](#11-normalization)
+- [12. Real-Life Use](#12-real-life-use)
+- [13. Final Summary](#13-final-summary)
 
 ## 1. What is a Database?
 
@@ -23,6 +48,8 @@ It is software that helps users:
 - Store data
 - Manage data
 - Retrieve data
+- Update data
+- Control access to data
 
 ### Simple Meaning
 
@@ -63,8 +90,10 @@ DBMS acts as a middle layer between the user and the database.
 
 - MySQL
 - PostgreSQL
+- Oracle
+- SQL Server
 
-**Note:** This is the type you are mainly learning.
+**Note:** This is the type most commonly used in companies and the one you should focus on first.
 
 ### 4. NoSQL DBMS
 
@@ -80,7 +109,7 @@ DBMS acts as a middle layer between the user and the database.
 
 It is used to:
 
-- Create databases
+- Create databases and tables
 - Insert data
 - Update data
 - Delete data
@@ -115,7 +144,7 @@ DROP DATABASE company;
 - This permanently deletes the database
 - All data will be lost
 
-## 7. Extra Important Concepts
+## 7. Important Concepts
 
 ### Table
 
@@ -123,9 +152,9 @@ Data inside a database is stored in tables.
 
 Example:
 
-| id | name | age |
-|----|------|-----|
-| 1  | Rahul | 25 |
+| id | name  | age |
+|-----|-------|-----|
+| 1   | Rahul | 25  |
 
 ### Row and Column
 
@@ -149,7 +178,59 @@ CRUD means the four basic database operations:
 
 These operations are used regularly in real jobs.
 
-## 8. Real-Life Use
+## 8. Keys in DBMS
+
+Keys are used to identify records and connect tables.
+
+### Primary Key
+
+- Uniquely identifies each row in a table
+- Cannot contain duplicate values
+
+### Foreign Key
+
+- A column that links one table with another table
+- Helps create relationships between tables
+
+### Candidate Key
+
+- A column that can become a primary key
+
+### Composite Key
+
+- A key made using two or more columns together
+
+## 9. Advantages of DBMS
+
+- Reduces data duplication
+- Improves data security
+- Makes data sharing easier
+- Supports backup and recovery
+- Helps maintain data accuracy
+- Makes searching and reporting faster
+
+## 10. Disadvantages of DBMS
+
+- Software can be costly
+- Requires training
+- Setup can be complex
+- Needs regular maintenance
+
+## 11. Normalization
+
+**Normalization** is the process of organizing data to reduce duplication and improve consistency.
+
+### Simple Meaning
+
+It helps keep the database clean and avoids repeated data.
+
+### Main Benefit
+
+- Reduces redundancy
+- Improves accuracy
+- Makes updates easier
+
+## 12. Real-Life Use
 
 Since you work in operations, databases can help you:
 
@@ -157,15 +238,16 @@ Since you work in operations, databases can help you:
 - Compare monthly performance
 - Track insurance claims
 - Reduce heavy Excel work
+- Create reports faster
 
-**SQL + Excel** is a very powerful combo for operations and reporting work.
+**SQL + Excel** is a powerful combo for operations, reporting, and analysis work.
 
-## Final Summary
+## 13. Final Summary
 
-- **Database** -> stores data
-- **DBMS** -> manages data
-- **SQL** -> communicates with database
-- **RDBMS** -> the most important type for learning and jobs
+- **Database** -> stores organized data
+- **DBMS** -> manages the database
+- **SQL** -> communicates with the database
+- **RDBMS** -> stores data in table format and uses SQL
 
 ## Quick Revision
 
@@ -173,3 +255,6 @@ Since you work in operations, databases can help you:
 - DBMS = software that manages the database
 - SQL = language used to work with databases
 - RDBMS = table-based database system using SQL
+- Primary Key = unique identifier
+- Foreign Key = connects tables
+- Normalization = reduces duplicate data
